@@ -27,16 +27,7 @@
 			<Item Name="FRC Simulated.xml" Type="Document" URL="../FRC Simulated.xml"/>
 		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
-		<Item Name="MotionProfileTest.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileTest.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="MotionProfileGenerator.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGenerator.vi"/>
-			<Item Name="TrajectoryPoint.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/Type.Def/TrajectoryPoint.ctl"/>
-			<Item Name="MotionProfileGeneratorVelocity.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorVelocity.vi"/>
-			<Item Name="MotionProfileGeneratorPosition.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorPosition.vi"/>
-			<Item Name="MotionProfileGeneratorZeroVelocityPoint.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorZeroVelocityPoint.vi"/>
-			<Item Name="MotionProfileGeneratorFilter2Sum.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorFilter2Sum.vi"/>
-			<Item Name="MotionProfileGeneratorFilter1Sum.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorFilter1Sum.vi"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
