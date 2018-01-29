@@ -26,8 +26,12 @@
 			</Item>
 			<Item Name="FRC Simulated.xml" Type="Document" URL="../FRC Simulated.xml"/>
 		</Item>
+		<Item Name="Tests" Type="Folder">
+			<Item Name="TestArmPathPlanner.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/TestArmPathPlanner.vi"/>
+			<Item Name="MotionProfileTest.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileTest.vi"/>
+		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
-		<Item Name="TestArmPathPlanner.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/TestArmPathPlanner.vi"/>
+		<Item Name="TrajectoryPoint.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TypeDefs/TrajectoryPoint.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Geometry.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Geometry.lvlib"/>
@@ -370,6 +374,7 @@
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
+				<Item Name="CTRE_Phoenix_MotorControl_TrajectoryPointTimeDur.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_TrajectoryPointTimeDur.ctl"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="DC Motor Controller.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/DC Motor Controller/HAIOL/DC Motor Controller.lvclass"/>
@@ -410,11 +415,21 @@
 			<Item Name="CoordinateConvert_CartesianToArm_Arrays.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/CoordinateConvert_CartesianToArm_Arrays.vi"/>
 			<Item Name="ArmPathLength.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/ArmPathLength.vi"/>
 			<Item Name="CoordinateConvert_ArmToCartesian.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/CoordinateConvert_ArmToCartesian.vi"/>
-			<Item Name="RedistributeArmPathPoints.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/RedistributeArmPathPoints.vi"/>
 			<Item Name="CoordinateConvert_ArmToCartesian_Arrays.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/CoordinateConvert_ArmToCartesian_Arrays.vi"/>
 			<Item Name="VectorLength.vi" Type="VI" URL="../PowerUpSrc/General/VectorLength.vi"/>
 			<Item Name="DotProduct.vi" Type="VI" URL="../PowerUpSrc/General/DotProduct.vi"/>
 			<Item Name="PointLineDistance.vi" Type="VI" URL="../PowerUpSrc/General/PointLineDistance.vi"/>
+			<Item Name="MotionProfileGeneratorZeroVelocityPoint.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorZeroVelocityPoint.vi"/>
+			<Item Name="MotionProfileGeneratorPosition.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorPosition.vi"/>
+			<Item Name="MotionProfileGeneratorVelocity.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorVelocity.vi"/>
+			<Item Name="MotionProfileGeneratorFilter2Sum.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorFilter2Sum.vi"/>
+			<Item Name="MotionProfileGeneratorFilter1Sum.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorFilter1Sum.vi"/>
+			<Item Name="MotionProfileGenerator.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGenerator.vi"/>
+			<Item Name="GenerateArmMotionProfilePoints.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/GenerateArmMotionProfilePoints.vi"/>
+			<Item Name="RedistributeArmPathPointsVariable.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/RedistributeArmPathPointsVariable.vi"/>
+			<Item Name="RedistributePathPointsVariable.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/RedistributePathPointsVariable.vi"/>
+			<Item Name="PlotMotionProfile.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TestSupport/PlotMotionProfile.vi"/>
+			<Item Name="MotionProfileGeneratorParams.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TypeDefs/MotionProfileGeneratorParams.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
