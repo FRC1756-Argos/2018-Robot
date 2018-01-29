@@ -31,7 +31,6 @@
 			<Item Name="MotionProfileTest.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileTest.vi"/>
 		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
-		<Item Name="TrajectoryPoint.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TypeDefs/TrajectoryPoint.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Geometry.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Geometry.lvlib"/>
@@ -430,6 +429,7 @@
 			<Item Name="RedistributePathPointsVariable.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/RedistributePathPointsVariable.vi"/>
 			<Item Name="PlotMotionProfile.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TestSupport/PlotMotionProfile.vi"/>
 			<Item Name="MotionProfileGeneratorParams.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TypeDefs/MotionProfileGeneratorParams.ctl"/>
+			<Item Name="TrajectoryPoint.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TypeDefs/TrajectoryPoint.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
