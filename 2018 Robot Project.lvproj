@@ -29,6 +29,7 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="TestArmPathPlanner.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/TestArmPathPlanner.vi"/>
 			<Item Name="MotionProfileTest.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileTest.vi"/>
+			<Item Name="DrawPolygon2D.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TestSupport/DrawPolygon2D.vi"/>
 		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -385,7 +386,7 @@
 				<Item Name="Parallax Standard Servo.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/Parallax Standard Servo/HAIOL/Parallax Standard Servo.lvclass"/>
 			</Item>
 			<Item Name="Point2D.ctl" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TypeDefs/Point2D.ctl"/>
-			<Item Name="DrawCircle.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerTestSupport/DrawCircle.vi"/>
+			<Item Name="DrawCircle.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TestSupport/DrawCircle.vi"/>
 			<Item Name="ArmPathPlanner.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/ArmPathPlanner.vi"/>
 			<Item Name="ArmCoordinate.ctl" Type="VI" URL="../PowerUpSrc/Implements/Arm/TypeDefs/ArmCoordinate.ctl"/>
 			<Item Name="Polygon2D.ctl" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TypeDefs/Polygon2D.ctl"/>
@@ -434,6 +435,7 @@
 			<Item Name="ode.dll" Type="Document" URL="ode.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="AvoidancePolygon.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/AvoidancePolygon.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
