@@ -379,6 +379,8 @@
 				<Item Name="WPI_CTRE_MotorController_Callback_Enable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/WPI Callback VIs/WPI_CTRE_MotorController_Callback_Enable.vi"/>
 				<Item Name="CTRE_Phoenix_MotorControl_SetSelectedSensorPosition.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Sensor/CTRE_Phoenix_MotorControl_SetSelectedSensorPosition.vi"/>
 				<Item Name="WPI_CTRE_MotorController_Callback_Disable.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/WPI Callback VIs/WPI_CTRE_MotorController_Callback_Disable.vi"/>
+				<Item Name="spi_bus.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/spilib/spi_bus.ctl"/>
+				<Item Name="CTRE_Phoenix_MotorControl_NeutralMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_NeutralMode.ctl"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="DC Motor Controller.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/DC Motor Controller/HAIOL/DC Motor Controller.lvclass"/>
@@ -436,6 +438,15 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="AvoidancePolygon.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/AvoidancePolygon.vi"/>
+			<Item Name="Config_DoubleSolenoid.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_DoubleSolenoid.ctl"/>
+			<Item Name="Config_PIDParams.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_PIDParams.ctl"/>
+			<Item Name="Config_DigitalIO.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_DigitalIO.ctl"/>
+			<Item Name="Config_IMU.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_IMU.ctl"/>
+			<Item Name="Config_Motor.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_Motor.ctl"/>
+			<Item Name="Config_Robot.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_Robot.ctl"/>
+			<Item Name="Config_Dimensions.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_Dimensions.ctl"/>
+			<Item Name="RobotID.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/RobotID.ctl"/>
+			<Item Name="SelectRobotConfig.vi" Type="VI" URL="../PowerUpSrc/Global_Var-RefNum/SelectRobotConfig.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
