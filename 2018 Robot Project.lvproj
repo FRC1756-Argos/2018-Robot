@@ -448,6 +448,7 @@
 			<Item Name="Config_Dimensions.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_Dimensions.ctl"/>
 			<Item Name="RobotID.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/RobotID.ctl"/>
 			<Item Name="SelectRobotConfig.vi" Type="VI" URL="../PowerUpSrc/Global_Var-RefNum/SelectRobotConfig.vi"/>
+			<Item Name="Config_ArmHome.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_ArmHome.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
