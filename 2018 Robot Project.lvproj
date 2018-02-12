@@ -449,6 +449,8 @@
 			<Item Name="RobotID.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/RobotID.ctl"/>
 			<Item Name="SelectRobotConfig.vi" Type="VI" URL="../PowerUpSrc/Global_Var-RefNum/SelectRobotConfig.vi"/>
 			<Item Name="Config_ArmHome.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_ArmHome.ctl"/>
+			<Item Name="TangentLineAngle.vi" Type="VI" URL="../PowerUpSrc/General/Math/TangentLineAngle.vi"/>
+			<Item Name="ArmTangentPath.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/ArmTangentPath.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
