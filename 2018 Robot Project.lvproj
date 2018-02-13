@@ -541,6 +541,12 @@ AddOutputFilter chunkFilter
 			<Item Name="ArgosLib" Type="Folder" URL="../ArgosLib">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
+			<Item Name="lib" Type="Folder" URL="../lib">
+				<Property Name="NI.DISK" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Pathfinder" Type="Folder" URL="../Pathfinder">
+				<Property Name="NI.DISK" Type="Bool">true</Property>
+			</Item>
 			<Item Name="PowerUpSrc" Type="Folder" URL="../PowerUpSrc">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
