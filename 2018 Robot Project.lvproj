@@ -382,6 +382,7 @@
 				<Item Name="spi_bus.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/spilib/spi_bus.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_NeutralMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_NeutralMode.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_LimitSwitchNormal.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_LimitSwitchNormal.ctl"/>
+				<Item Name="WPI_SerialPort.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SerialPort/WPI_SerialPort.ctl"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="DC Motor Controller.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/DC Motor Controller/HAIOL/DC Motor Controller.lvclass"/>
@@ -451,6 +452,7 @@
 			<Item Name="Config_ArmHome.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_ArmHome.ctl"/>
 			<Item Name="TangentLineAngle.vi" Type="VI" URL="../PowerUpSrc/General/Math/TangentLineAngle.vi"/>
 			<Item Name="ArmTangentPath.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/ArmTangentPath.vi"/>
+			<Item Name="Config_SerialPort.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_SerialPort.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
