@@ -1,0 +1,4 @@
+include 'Pathfinder-Core',
+        'Pathfinder-Java'
+        
+rootProject.name = "Pathfinder"
