@@ -32,6 +32,7 @@
 			<Item Name="DrawPolygon2D.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TestSupport/DrawPolygon2D.vi"/>
 		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
+		<Item Name="DrivePathfinderParams.ctl" Type="VI" URL="../PowerUpSrc/Autonomous/PathPlannerSupport/TypeDefs/DrivePathfinderParams.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_AAL_Geometry.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_Geometry.lvlib"/>
