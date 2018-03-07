@@ -4,8 +4,7 @@ Right: Right Switch !
 
 Left: Left Switch
 19.5,276,0
-204,276,315
-204,240,225
+156,246,290
 
 Right: Left Switch
 19.5,48,0
@@ -27,7 +26,7 @@ Right: Right Scale !
 
 Left: Left Scale
 19.5,276,0
-300,252,340
+300,240,340
 
 Right: Left Scale !~
 19.5,48,0
@@ -37,6 +36,6 @@ Right: Left Scale !~
 
 Left: Right Scale
 19.5,276,0
-240,168,270
-240,84,300
-300,72,20
+258,174,270
+270,74,300
+362,69,20
