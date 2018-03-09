@@ -46,6 +46,7 @@ The columns are as follows (in the listed order):
    + 2: Reverse: Intake retracted and closed with motors set to expel cube
    + 3: Forward Open: Intake extended and open with motors set to pull in cube
  8. "ClawOpen": `1` for claw open, `0` for claw closed
+ 9. "ArmOffsetTime": Milliseconds before drive end the arm should finish motion.  Recommend at least 1000ms before switch and at least 2000ms before scale
 
 ## Deploying Routines
 

@@ -1,4 +1,4 @@
-WaypointType,Waypoint.x,Waypoint.y,Waypoint.angle,WaitTime,ArmPosition,IntakeState,ClawOpen
-0,0,0,0,0,0,0,0
-0,120,0,0,0,0,0,0
-5,0,0,0,0,0,0,0
+WaypointType,Waypoint.x,Waypoint.y,Waypoint.angle,WaitTime,ArmPosition,IntakeState,ClawOpen,ArmOffsetTime
+0,0,0,0,0,0,0,0,0
+0,120,0,0,0,0,0,0,0
+5,0,0,0,0,0,0,0,0
