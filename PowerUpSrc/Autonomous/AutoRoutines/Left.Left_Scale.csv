@@ -1,6 +1,6 @@
 WaypointType,Waypoint.x,Waypoint.y,Waypoint.angle,WaitTime,ArmPosition,IntakeState,ClawOpen,ArmOffsetTime
 0,19.5,276,0,0,0,0,0,4000
-0,300,252,340,0,3,0,0,0
+0,282,252,325,0,3,0,0,0
 3,0,0,0,400,3,0,1,0
 0,300,252,340,0,3,0,0,0
 0,270,300,270,0,3,0,0,0
