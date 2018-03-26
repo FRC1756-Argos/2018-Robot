@@ -47,6 +47,7 @@ The columns are as follows (in the listed order):
    + 3: Forward Open: Intake extended and open with motors set to pull in cube
  8. "ClawOpen": `1` for claw open, `0` for claw closed
  9. "ArmOffsetTime": Milliseconds before drive end the arm should finish motion.  Recommend at least 1000ms before switch and at least 2000ms before scale
+ 10. "TimedClawRelease": Milliseconds before step end the claw should transition to new state.  `0` indicates use new state for the entire step.
 
 ## Deploying Routines
 
