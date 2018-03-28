@@ -27,3 +27,5 @@ The following variables are used to communicate between the robot and the dashbo
 | /Argos/Diagnostics/AutoRoutineActive | string | Currently active autonomous routine |
 | /Argos/Diagnostics/AutoControlActive | bool | True when autonomous controller is controlling robot |
 | /Argos/Diagnostics/ArmControlMode | string | Current control mode of arm |
+| /Argos/Calibration/EncoderDriveLeft | int32 | Left drive encoder tick count |
+| /Argos/Calibration/EncoderDriveRight | int32 | Right drive encoder tick count |
