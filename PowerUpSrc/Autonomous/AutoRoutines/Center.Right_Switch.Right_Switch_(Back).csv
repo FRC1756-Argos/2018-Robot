@@ -1,7 +1,7 @@
 WaypointType,Waypoint.x,Waypoint.y,Waypoint.angle,WaitTime,ArmPosition,IntakeState,ClawOpen,ArmOffsetTime,TimedClawRelease
 0,19.5,160,0,0,0,0,0,1500,0
-0,133,114,0,0,1,0,0,0,0
-0,133,114,0,0,1,0,1,2000,0
+0,127,114,0,0,1,0,0,0,0
+0,127,114,0,0,1,0,1,2000,0
 1,100,84,90,0,0,0,1,0,0
 1,133,54,180,0,0,0,1,0,0
 1,230,44,180,0,0,0,1,0,0
