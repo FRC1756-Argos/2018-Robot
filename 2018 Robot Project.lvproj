@@ -453,6 +453,7 @@
 			<Item Name="TangentLineAngle.vi" Type="VI" URL="../PowerUpSrc/General/Math/TangentLineAngle.vi"/>
 			<Item Name="ArmTangentPath.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/ArmTangentPath.vi"/>
 			<Item Name="Config_SerialPort.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_SerialPort.ctl"/>
+			<Item Name="Config_SelfieStick.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_SelfieStick.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1220,7 +1221,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">61</Property>
+				<Property Name="Bld_version.build" Type="Int">64</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
