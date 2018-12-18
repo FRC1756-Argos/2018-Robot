@@ -29,7 +29,6 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="TestArmPathPlanner.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/TestArmPathPlanner.vi"/>
 			<Item Name="MotionProfileTest.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileTest.vi"/>
-			<Item Name="DrawPolygon2D.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TestSupport/DrawPolygon2D.vi"/>
 		</Item>
 		<Item Name="Robot Simulation Readme.html" Type="Document" URL="../Robot Simulation Readme.html"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -383,35 +382,93 @@
 				<Item Name="CTRE_Phoenix_MotorControl_NeutralMode.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_NeutralMode.ctl"/>
 				<Item Name="CTRE_Phoenix_MotorControl_LimitSwitchNormal.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_LimitSwitchNormal.ctl"/>
 				<Item Name="WPI_SerialPort.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SerialPort/WPI_SerialPort.ctl"/>
+				<Item Name="WPI_MotorControlRefNum Registry Set.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/MotorControl/WPI_MotorControlRefNum Registry Set.vi"/>
+				<Item Name="CTRE_Phoenix_MotorControl_ConfigForwardLimitSwitch_Enhanced.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Limit Switch/CTRE_Phoenix_MotorControl_ConfigForwardLimitSwitch_Enhanced.vi"/>
+				<Item Name="CTRE_Phoenix_MotorControl_LimitSwitchSource_Local.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Controls/CTRE_Phoenix_MotorControl_LimitSwitchSource_Local.ctl"/>
+				<Item Name="CTRE_Phoenix_MotorControl_ConfigReverseLimitSwitch_Enhanced.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Limit Switch/CTRE_Phoenix_MotorControl_ConfigReverseLimitSwitch_Enhanced.vi"/>
+				<Item Name="CTRE_Phoenix_MotorControl_EnableVoltageCompensation.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Output Config/CTRE_Phoenix_MotorControl_EnableVoltageCompensation.vi"/>
+				<Item Name="CTRE_Phoenix_MotorControl_ConfigVoltageCompensation.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/Phoenix-LabVIEW/Motor Controller/Output Config/CTRE_Phoenix_MotorControl_ConfigVoltageCompensation.vi"/>
+				<Item Name="TCP Listen.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen.vi"/>
+				<Item Name="Internecine Avoider.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/Internecine Avoider.vi"/>
+				<Item Name="TCP Listen List Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen List Operations.ctl"/>
+				<Item Name="TCP Listen Internal List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tcp.llb/TCP Listen Internal List.vi"/>
+				<Item Name="WPI_CameraRefNum Registry Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraRefNum Registry Get.vi"/>
+				<Item Name="WPI_CameraDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraDevRef.ctl"/>
+				<Item Name="WPI_CameraIsCameraRefUSBAddress.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraIsCameraRefUSBAddress.vi"/>
+				<Item Name="WPI_CameraIsUSBAddress.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraIsUSBAddress.vi"/>
+				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
+				<Item Name="WPI_CameraParse URL.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraParse URL.vi"/>
+				<Item Name="WPI_CameraTranslate Percent Codes.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraTranslate Percent Codes.vi"/>
+				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
+				<Item Name="WPI_CameraStart.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraStart.vi"/>
+				<Item Name="WPI_CameraGet Acquire Image Notifier Internal.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraGet Acquire Image Notifier Internal.vi"/>
+				<Item Name="WPI_CameraStartStopCount.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraStartStopCount.vi"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
+				<Item Name="WPI_CameraStop.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraStop.vi"/>
+				<Item Name="WPI_CameraGet Image Notifier Internal.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraGet Image Notifier Internal.vi"/>
+				<Item Name="Safe Image Get Image.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/Safe Image Get Image.vi"/>
+				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
+				<Item Name="WPI_CameraCountSameBufferNumber.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraCountSameBufferNumber.vi"/>
+				<Item Name="IMAQ Flatten Image to String" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Flatten Image to String"/>
+				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
+				<Item Name="WPI_CameraOpenAndSetVideoMode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraOpenAndSetVideoMode.vi"/>
+				<Item Name="WPI_CameraCompressionMode.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraCompressionMode.vi"/>
+				<Item Name="WPI_CameraSet Image Compression.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Image Compression.vi"/>
+				<Item Name="WPI_CameraSet Numeric Appearance Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Numeric Appearance Property.vi"/>
+				<Item Name="WPI_CameraSet Image Appearance Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Image Appearance Property.vi"/>
+				<Item Name="WPI_CameraIssue Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraIssue Get.vi"/>
+				<Item Name="WPI_CameraIssue HTTP Request with Authentication.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraIssue HTTP Request with Authentication.vi"/>
+				<Item Name="WPI_CameraERRFailedComm.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraERRFailedComm.vi"/>
+				<Item Name="WPI_CameraIsSimulated.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraIsSimulated.vi"/>
+				<Item Name="WPI_CameraManage Camera Settings.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraManage Camera Settings.vi"/>
+				<Item Name="WPI_CameraSettings Control.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSettings Control.ctl"/>
+				<Item Name="WPI_CameraSettings Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSettings Operations.ctl"/>
+				<Item Name="WPI_CameraSet Image Size.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Image Size.vi"/>
+				<Item Name="WPI_CameraGet Image Size.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraGet Image Size.vi"/>
+				<Item Name="WPI_CameraGet Enum Appearance Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraGet Enum Appearance Property.vi"/>
+				<Item Name="WPI_CameraGet Image Appearance Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraGet Image Appearance Property.vi"/>
+				<Item Name="WPI_CameraImageSize.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraImageSize.ctl"/>
+				<Item Name="WPI_CameraSet Frame Rate.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Frame Rate.vi"/>
+				<Item Name="WPI_CameraBasisString.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraBasisString.vi"/>
+				<Item Name="WPI_CameraFrameRate.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraFrameRate.ctl"/>
+				<Item Name="WPI_CameraPrint Error To Image.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraPrint Error To Image.vi"/>
+				<Item Name="IMAQ SetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ SetImageSize"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+				<Item Name="IMAQ Clear Overlay" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Clear Overlay"/>
+				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
+				<Item Name="IMAQ Merge Overlay" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Merge Overlay"/>
+				<Item Name="WPI_CameraSet Brightness.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Brightness.vi"/>
+				<Item Name="WPI_CameraSet Numeric Sensor Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Numeric Sensor Property.vi"/>
+				<Item Name="WPI_CameraSetScaledAttr.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraSetScaledAttr.vi"/>
+				<Item Name="WPI_CameraSetModeAttr.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraSetModeAttr.vi"/>
+				<Item Name="WPI_CameraSendMarkedString.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSendMarkedString.vi"/>
+				<Item Name="WPI_CameraApplyServerCameraSettings.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraApplyServerCameraSettings.vi"/>
+				<Item Name="WPI_Camera CGI Parse for WB.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_Camera CGI Parse for WB.vi"/>
+				<Item Name="WPI_CameraWhite Balance Values.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraWhite Balance Values.ctl"/>
+				<Item Name="WPI_CameraSet White Balance.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet White Balance.vi"/>
+				<Item Name="WPI_CameraSet Enum Sensor Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Enum Sensor Property.vi"/>
+				<Item Name="WPI_CameraWhiteBalanceConstants.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/USB Support/WPI_CameraWhiteBalanceConstants.vi"/>
+				<Item Name="WPI_CameraSet Sharpness.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Sharpness.vi"/>
+				<Item Name="WPI_CameraSet Color Level.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Color Level.vi"/>
+				<Item Name="WPI_Camera CGI Parse for Exposure.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_Camera CGI Parse for Exposure.vi"/>
+				<Item Name="WPI_CameraExposure Values.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraExposure Values.ctl"/>
+				<Item Name="WPI_CameraSet Exposure.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Exposure.vi"/>
+				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="DC Motor Controller.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/DC Motor Controller/HAIOL/DC Motor Controller.lvclass"/>
 				<Item Name="DC Motor Controller Simulator.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/DC Motor Controller/HAIOL/Simulator/DC Motor Controller Simulator.lvclass"/>
 				<Item Name="Parallax Standard Servo.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/Parallax Standard Servo/HAIOL/Parallax Standard Servo.lvclass"/>
 			</Item>
-			<Item Name="Point2D.ctl" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TypeDefs/Point2D.ctl"/>
-			<Item Name="DrawCircle.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TestSupport/DrawCircle.vi"/>
 			<Item Name="ArmPathPlanner.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/ArmPathPlanner.vi"/>
 			<Item Name="ArmCoordinate.ctl" Type="VI" URL="../PowerUpSrc/Implements/Arm/TypeDefs/ArmCoordinate.ctl"/>
-			<Item Name="Polygon2D.ctl" Type="VI" URL="../PowerUpSrc/General/PathPlanning/TypeDefs/Polygon2D.ctl"/>
 			<Item Name="CoordinateConvert_CartesianToArm.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/CoordinateConvert_CartesianToArm.vi"/>
-			<Item Name="Modulus.vim" Type="VI" URL="../PowerUpSrc/General/Modulus.vim"/>
-			<Item Name="Hypotenuse.vi" Type="VI" URL="../PowerUpSrc/General/Hypotenuse.vi"/>
 			<Item Name="GenerateXYArmPathPolygon.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/GenerateXYArmPathPolygon.vi"/>
-			<Item Name="ReRouteAroundPolygon.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/ReRouteAroundPolygon.vi"/>
-			<Item Name="PointInPolygon.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/PointInPolygon.vi"/>
-			<Item Name="FindLinePolygonIntersectionFaces.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/FindLinePolygonIntersectionFaces.vi"/>
-			<Item Name="GetPolygonPointsBetweenSides.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/GetPolygonPointsBetweenSides.vi"/>
-			<Item Name="PathLength.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/PathLength.vi"/>
-			<Item Name="RedistributePathPoints.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/RedistributePathPoints.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="CoordinateConvert_CartesianToArm_Arrays.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/CoordinateConvert_CartesianToArm_Arrays.vi"/>
 			<Item Name="ArmPathLength.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/ArmPathLength.vi"/>
 			<Item Name="CoordinateConvert_ArmToCartesian.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/CoordinateConvert_ArmToCartesian.vi"/>
 			<Item Name="CoordinateConvert_ArmToCartesian_Arrays.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/CoordinateConvert_ArmToCartesian_Arrays.vi"/>
-			<Item Name="VectorLength.vi" Type="VI" URL="../PowerUpSrc/General/VectorLength.vi"/>
-			<Item Name="DotProduct.vi" Type="VI" URL="../PowerUpSrc/General/DotProduct.vi"/>
-			<Item Name="PointLineDistance.vi" Type="VI" URL="../PowerUpSrc/General/PointLineDistance.vi"/>
 			<Item Name="MotionProfileGeneratorZeroVelocityPoint.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorZeroVelocityPoint.vi"/>
 			<Item Name="MotionProfileGeneratorPosition.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorPosition.vi"/>
 			<Item Name="MotionProfileGeneratorVelocity.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGeneratorSubVIs/MotionProfileGeneratorVelocity.vi"/>
@@ -420,7 +477,6 @@
 			<Item Name="MotionProfileGenerator.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/MotionProfileGenerator.vi"/>
 			<Item Name="GenerateArmMotionProfilePoints.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/GenerateArmMotionProfilePoints.vi"/>
 			<Item Name="RedistributeArmPathPointsVariable.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/RedistributeArmPathPointsVariable.vi"/>
-			<Item Name="RedistributePathPointsVariable.vi" Type="VI" URL="../PowerUpSrc/General/PathPlanning/RedistributePathPointsVariable.vi"/>
 			<Item Name="PlotMotionProfile.vi" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TestSupport/PlotMotionProfile.vi"/>
 			<Item Name="MotionProfileGeneratorParams.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TypeDefs/MotionProfileGeneratorParams.ctl"/>
 			<Item Name="TrajectoryPoint.ctl" Type="VI" URL="../PowerUpSrc/General/MotionProfiling/TypeDefs/TrajectoryPoint.ctl"/>
@@ -440,21 +496,23 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="AvoidancePolygon.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/AvoidancePolygon.vi"/>
-			<Item Name="Config_DoubleSolenoid.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_DoubleSolenoid.ctl"/>
-			<Item Name="Config_PIDParams.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_PIDParams.ctl"/>
-			<Item Name="Config_DigitalIO.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_DigitalIO.ctl"/>
-			<Item Name="Config_IMU.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_IMU.ctl"/>
-			<Item Name="Config_Motor.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_Motor.ctl"/>
 			<Item Name="Config_Robot.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_Robot.ctl"/>
 			<Item Name="Config_Dimensions.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_Dimensions.ctl"/>
 			<Item Name="RobotID.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/RobotID.ctl"/>
 			<Item Name="SelectRobotConfig.vi" Type="VI" URL="../PowerUpSrc/Global_Var-RefNum/SelectRobotConfig.vi"/>
 			<Item Name="Config_ArmHome.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_ArmHome.ctl"/>
-			<Item Name="TangentLineAngle.vi" Type="VI" URL="../PowerUpSrc/General/Math/TangentLineAngle.vi"/>
 			<Item Name="ArmTangentPath.vi" Type="VI" URL="../PowerUpSrc/Implements/Arm/PathPlannerSupport/ArmTangentPath.vi"/>
-			<Item Name="Config_SerialPort.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_SerialPort.ctl"/>
 			<Item Name="Config_SelfieStick.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_SelfieStick.ctl"/>
-			<Item Name="Config_MotorCtrlType.ctl" Type="VI" URL="../PowerUpSrc/TypeDefs/ConfigComponents/Config_MotorCtrlType.ctl"/>
+			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="SwitchedCameraData.vi" Type="VI" URL="../PowerUpSrc/Global_Var-RefNum/SwitchedCameraData.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1232,7 +1290,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">71</Property>
+				<Property Name="Bld_version.build" Type="Int">72</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
