@@ -1,0 +1,591 @@
+<HTML>
+<HEAD>
+<TITLE>GetAutoRoutine.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="GetAutoRoutine.vi"></A><H2>GetAutoRoutine.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../img/GetAutoRoutine.vic.png" ALT="GetAutoRoutine.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../img/GetAutoRoutine.vip.png" ALT="GetAutoRoutine.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>AvailableRoutines</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dstr.png" ALT="c1dstr"></P>
+</TD>
+<TD>
+<B>Routine Names</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>String</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dpath.png" ALT="c1dpath"></P>
+</TD>
+<TD>
+<B>Routines</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>Path</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>Default Auto Routine</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>FieldState</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Test</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dcclst.png" ALT="i1dcclst"></P>
+</TD>
+<TD>
+<B>Selected Routine</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>Cluster</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>DrivePath</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>LeftDriveTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>RightDriveTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B>PlanTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Execute</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>ArmPath</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dcclst.png" ALT="i1dcclst"></P>
+</TD>
+<TD>
+<B>RotateTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Position </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Velocity </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Time (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Last Point</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dcclst.png" ALT="i1dcclst"></P>
+</TD>
+<TD>
+<B>ExtendTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Position </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Velocity </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Time (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Last Point</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B>PlanTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Execute</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>Waypoint Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/iu16.png" ALT="iu16"></P>
+</TD>
+<TD>
+<B>WaitTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>ArmPosition</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>IntakeState</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Claw Open</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/iu16.png" ALT="iu16"></P>
+</TD>
+<TD>
+<B>ArmOffsetTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>ClawReleaseTime (ms)</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>Selected Routine Name</B> </TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../img/GetAutoRoutine.vid.png" ALT="GetAutoRoutine.vi"></P>
+<P><IMG SRC="../../../img/GetAutoRoutine.vid1.png" ALT="GetAutoRoutine.vi"></P>
+<P><IMG SRC="../../../img/GetAutoRoutine.vid2.png" ALT="GetAutoRoutine.vi"></P>
+<P><IMG SRC="../../../img/GetAutoRoutine.vid3.png" ALT="GetAutoRoutine.vi"></P>
+<P><IMG SRC="../../../img/GetAutoRoutine.vid4.png" ALT="GetAutoRoutine.vi"></P>
+<P><IMG SRC="../../../img/GetAutoRoutine.vid5.png" ALT="GetAutoRoutine.vi"></P>
+<P><IMG SRC="../../../img/GetAutoRoutine.vid6.png" ALT="GetAutoRoutine.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;GetAutoRoutine.vi History&quot;</P>
+<P>Current Revision:   19</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../img/GetAutoRoutine.vih.png" ALT="GetAutoRoutine.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

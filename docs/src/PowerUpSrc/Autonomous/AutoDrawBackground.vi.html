@@ -1,0 +1,414 @@
+<HTML>
+<HEAD>
+<TITLE>AutoDrawBackground.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="AutoDrawBackground.vi"></A><H2>AutoDrawBackground.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../img/AutoDrawBackground.vic.png" ALT="AutoDrawBackground.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../img/AutoDrawBackground.vip.png" ALT="AutoDrawBackground.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Field Perimeter (in)</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Point Coordinates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Exchange (in)</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Point Coordinates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Pyramid (in)</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Point Coordinates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Auto Line (in)</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Point Coordinates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Switch (in)</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Point Coordinates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Platform (in)</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Point Coordinates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Scale (in)</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Point Coordinates</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>X</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Y</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Perimeter</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Exchange</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Pyramid</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Auto Line</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Switch</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Platform</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Scale</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>File Path</B> <P><B>File Path</B> is the complete pathname, including drive, directory, and filename, of the file to write.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>ScaleFactor</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/iudtagrefflat.png" ALT="iudtagrefflat"></P>
+</TD>
+<TD>
+<B>Image</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ipath.png" ALT="ipath"></P>
+</TD>
+<TD>
+<B>File Path Out</B> <P><B>File Path</B> is the complete pathname, including drive, directory, and filename, of the file to write.</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../img/AutoDrawBackground.vid.png" ALT="AutoDrawBackground.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;AutoDrawBackground.vi History&quot;</P>
+<P>Current Revision:   30</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../img/AutoDrawBackground.vih.png" ALT="AutoDrawBackground.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

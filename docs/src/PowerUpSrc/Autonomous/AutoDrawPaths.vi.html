@@ -1,0 +1,549 @@
+<HTML>
+<HEAD>
+<TITLE>AutoDrawPaths.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="AutoDrawPaths.vi"></A><H2>AutoDrawPaths.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../img/AutoDrawPaths.vic.png" ALT="AutoDrawPaths.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../img/AutoDrawPaths.vip.png" ALT="AutoDrawPaths.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>RoutineName</B> <P><B>Image Name</B> is the name associated with the created image. Each image created must have a unique name.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dcclst.png" ALT="c1dcclst"></P>
+</TD>
+<TD>
+<B>RoutineSteps</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Cluster</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DrivePath</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>LeftDriveTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>RightDriveTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>PlanTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Execute</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>ArmPath</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dcclst.png" ALT="c1dcclst"></P>
+</TD>
+<TD>
+<B>RotateTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Position </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Time (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Last Point</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dcclst.png" ALT="c1dcclst"></P>
+</TD>
+<TD>
+<B>ExtendTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>trajectory point </B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Position </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Velocity </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Time (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Last Point</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>PlanTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Execute</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Waypoint Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>WaitTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>ArmPosition</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>IntakeState</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Claw Open</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>ArmOffsetTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>ClawReleaseTime (ms)</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>Background File Path</B> <P><B>File Path</B> is the complete pathname, including drive, directory, and filename, of the file to read.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Scale Factor</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/iudtagrefflat.png" ALT="iudtagrefflat"></P>
+</TD>
+<TD>
+<B>Image Out</B> </TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../img/AutoDrawPaths.vid.png" ALT="AutoDrawPaths.vi"></P>
+<P><IMG SRC="../../../img/AutoDrawPaths.vid1.png" ALT="AutoDrawPaths.vi"></P>
+<P><IMG SRC="../../../img/AutoDrawPaths.vid2.png" ALT="AutoDrawPaths.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/Check_if_File_or_Folder_Existsi.png" ALT="Check if File or Folder Exists.vi"></P>
+</TD>
+<TD>
+<B><P>Check if File or Folder Exists.vi</P>
+</B><P>C:\Program Files (x86)\National Instruments\LabVIEW 2017\vi.lib\Utility\libraryn.llb\Check if File or Folder Exists.vi</P>
+</TD>
+</TR>
+</Table>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;AutoDrawPaths.vi History&quot;</P>
+<P>Current Revision:   32</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../img/AutoDrawPaths.vih.png" ALT="AutoDrawPaths.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

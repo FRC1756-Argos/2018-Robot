@@ -1,0 +1,782 @@
+<HTML>
+<HEAD>
+<TITLE>Pathfinder.lvlib:Modify Swerve.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Pathfinder.lvlib:Modify Swerve.vi"></A><H2>Pathfinder.lvlib:Modify Swerve.vi</H2>
+<P>CAPI void pathfinder_modify_swerve(Segment *original, int length, Segment *front_left, Segment *front_right,</P>
+<P>        Segment *back_left, Segment *back_right, double wheelbase_width, double wheelbase_depth, SWERVE_MODE mode);</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../../../img/Modify Swerve.vic.png" ALT="Pathfinder.lvlib:Modify Swerve.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../../../img/Modify Swerve.vip.png" ALT="Pathfinder.lvlib:Modify Swerve.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>wheelbase_width</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>wheelbase_depth</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>mode</B> <P>SWERVE_MODE</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error. </P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>Original</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>front_left out</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>front_right out</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>back_left out</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>back_right out</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>Original</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../../../img/Modify Swerve.vid.png" ALT="Pathfinder.lvlib:Modify Swerve.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;Pathfinder.lvlib:Modify Swerve.vi History&quot;</P>
+<P>Current Revision:   13</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../../../img/Modify Swerve.vih.png" ALT="Pathfinder.lvlib:Modify Swerve.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

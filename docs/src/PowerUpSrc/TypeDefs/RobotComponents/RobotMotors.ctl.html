@@ -1,0 +1,3044 @@
+<HTML>
+<HEAD>
+<TITLE>RobotMotors.ctl</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="RobotMotors.ctl"></A><H2>RobotMotors.ctl</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../../img/RobotMotors.ctlc.png" ALT="RobotMotors.ctl"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../../img/RobotMotors.ctlp.png" ALT="RobotMotors.ctl"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>RobotMotors</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DriveLeftPrimary</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DriveLeftSecondary1</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DriveRightPrimary</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DriveRightSecondary1</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B> RightIntake</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>LeftIntake</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>ArmPivot</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>ArmPivot 2 </B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>ArmExtend </B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Climber</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>SelfieStick</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+</UL>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;RobotMotors.ctl History&quot;</P>
+<P>Current Revision:   8</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../../img/RobotMotors.ctlh.png" ALT="RobotMotors.ctl"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

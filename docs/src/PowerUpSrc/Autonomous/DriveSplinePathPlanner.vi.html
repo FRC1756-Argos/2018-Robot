@@ -1,0 +1,500 @@
+<HTML>
+<HEAD>
+<TITLE>DriveSplinePathPlanner.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="DriveSplinePathPlanner.vi"></A><H2>DriveSplinePathPlanner.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../img/DriveSplinePathPlanner.vic.png" ALT="DriveSplinePathPlanner.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../img/DriveSplinePathPlanner.vip.png" ALT="DriveSplinePathPlanner.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>path</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>path</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>angle</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Tab Control</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DrivePathPlanParams</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>max_velocity (in/s)</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>max_acceleration (in/s^2)</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>max_jerk (in/s^3)</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>dt(ms)</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>sample_count</B> <P>int</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>wheelbase_width (in)</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>Path</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dcclst.png" ALT="i1dcclst"></P>
+</TD>
+<TD>
+<B>Position</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>RightTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dnclst.png" ALT="i1dnclst"></P>
+</TD>
+<TD>
+<B>LeftTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Inverted</B> </TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../img/DriveSplinePathPlanner.vid.png" ALT="DriveSplinePathPlanner.vi"></P>
+<P><IMG SRC="../../../img/DriveSplinePathPlanner.vid1.png" ALT="DriveSplinePathPlanner.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;DriveSplinePathPlanner.vi History&quot;</P>
+<P>Current Revision:   95</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../img/DriveSplinePathPlanner.vih.png" ALT="DriveSplinePathPlanner.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+<P><IMG SRC="../../../img/DriveSplinePathPlanner.vik1.png" ALT="DriveSplinePathPlanner.vi"></P>
+</BODY>
+</HTML>

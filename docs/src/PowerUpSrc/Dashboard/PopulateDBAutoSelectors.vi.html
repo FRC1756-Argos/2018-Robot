@@ -1,0 +1,237 @@
+<HTML>
+<HEAD>
+<TITLE>PopulateDBAutoSelectors.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="PopulateDBAutoSelectors.vi"></A><H2>PopulateDBAutoSelectors.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../img/PopulateDBAutoSelectors.vic.png" ALT="PopulateDBAutoSelectors.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../img/PopulateDBAutoSelectors.vip.png" ALT="PopulateDBAutoSelectors.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DefaultStartingPosition</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>Auto Routines Storage Directory</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Reload Routines</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>MotionPlanningNotifiers</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnotern.png" ALT="cnotern"></P>
+</TD>
+<TD>
+<B>DrivePlanRequestNotifier</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnotern.png" ALT="cnotern"></P>
+</TD>
+<TD>
+<B>DrivePlanResponseNotifier</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnotern.png" ALT="cnotern"></P>
+</TD>
+<TD>
+<B>ArmPlanRequestNotifier</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnotern.png" ALT="cnotern"></P>
+</TD>
+<TD>
+<B>ArmPlanResponseNotifier</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnotern.png" ALT="cnotern"></P>
+</TD>
+<TD>
+<B>DriveCompleteNotifier</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnotern.png" ALT="cnotern"></P>
+</TD>
+<TD>
+<B>ArmCompleteNotifier</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>AvailableRoutines</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dstr.png" ALT="i1dstr"></P>
+</TD>
+<TD>
+<B>Routine Names</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>String</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dpath.png" ALT="i1dpath"></P>
+</TD>
+<TD>
+<B>Routines</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ipath.png" ALT="ipath"></P>
+</TD>
+<TD>
+<B>Path</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>StartingPosition</B> <P><B>number as enum</B> returns the enum item with the specified or nearest enum value.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>AllRoutines</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dstr.png" ALT="i1dstr"></P>
+</TD>
+<TD>
+<B>Routine Names</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>String</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/i1dpath.png" ALT="i1dpath"></P>
+</TD>
+<TD>
+<B>Routines</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ipath.png" ALT="ipath"></P>
+</TD>
+<TD>
+<B>Path</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../img/PopulateDBAutoSelectors.vid.png" ALT="PopulateDBAutoSelectors.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;PopulateDBAutoSelectors.vi History&quot;</P>
+<P>Current Revision:   7</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../img/PopulateDBAutoSelectors.vih.png" ALT="PopulateDBAutoSelectors.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

@@ -1,0 +1,1332 @@
+<HTML>
+<HEAD>
+<TITLE>DriveControlManager.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="DriveControlManager.vi"></A><H2>DriveControlManager.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../img/DriveControlManager.vic.png" ALT="DriveControlManager.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../img/DriveControlManager.vip.png" ALT="DriveControlManager.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Right Drive Manual Control</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Left Drive Manual Control</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>New Motion Profile</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Left Drive Motor DevRef</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Right Drive Motor DevRef</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>DeviceStatus</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Type</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>DeadBand</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Name</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minPositivePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>centerPwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>maxNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>minNegativePwm</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>angularRange</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>CAN</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu8.png" ALT="cu8"></P>
+</TD>
+<TD>
+<B>Device Number</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>SetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>GetOutput VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Enable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Disable VI Ref</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>Data</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Invert</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>DIO PWM</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>PWM &quot;Enable&quot; Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>DIO Channel</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>PWM Rate</B> </TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>ClearMotionProfile</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Reset Right Drive Max</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Reset Left Drive Max</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Reset Left Drive Sensor</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Reset Right Drive Sensor</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>right drive unit coversion (ticks/in)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>left drive unit conversion (ticks/in)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Left Drive Position (in)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B> Right Drive Position (in)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Tab Control</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>StartAtZero</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>RightTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/c1dnclst.png" ALT="c1dnclst"></P>
+</TD>
+<TD>
+<B>LeftTrajectory</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>segment</B> <P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>dt</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>x</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>y</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>position</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>velocity</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>acceleration</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>jerk</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>heading</B> <P>double</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>StopDetectTime (ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>Drive Control State</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Left Drive</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Right Drive</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Right Drive</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Position (Sensor Units)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Velocity (Sensor Units per 100 ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Position (Raw Sensor Units)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Velocity (Raw Sensor Units per 100 ms)</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/inclst.png" ALT="inclst"></P>
+</TD>
+<TD>
+<B>Left Drive</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Position (Sensor Units)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Velocity (Sensor Units per 100 ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Position (Raw Sensor Units)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Velocity (Raw Sensor Units per 100 ms)</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>RightDriveFaults</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Under Voltage</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Forward Limit Switch</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Reverse Limit Switch</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Forward Soft Limit</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Reverse Soft Limit</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Hardware Failure</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Reset During Enable</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Sensor Overflow</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Sensor Out of Phase</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Hardware ESD Reset</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Remote Loss of Signal</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>LeftDriveFaults</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Under Voltage</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Forward Limit Switch</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Reverse Limit Switch</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Forward Soft Limit</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Reverse Soft Limit</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Hardware Failure</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Reset During Enable</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Sensor Overflow</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Sensor Out of Phase</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Hardware ESD Reset</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Remote Loss of Signal</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Max Left Drive Speed (Sensor Units per 100 ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Max Right Drive Speed (Sensor Units per 100 ms)</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>RightDriveV</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>LeftDriveV</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Right Error</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Left Error</B> </TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../img/DriveControlManager.vid.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid1.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid2.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid3.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid4.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid5.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid6.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid7.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid8.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid9.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid10.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid11.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid12.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vid13.png" ALT="DriveControlManager.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;DriveControlManager.vi History&quot;</P>
+<P>Current Revision:   132</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../img/DriveControlManager.vih.png" ALT="DriveControlManager.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+<P><IMG SRC="../../../img/DriveControlManager.vik1.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vik2.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vik3.png" ALT="DriveControlManager.vi"></P>
+<P><IMG SRC="../../../img/DriveControlManager.vik4.png" ALT="DriveControlManager.vi"></P>
+</BODY>
+</HTML>

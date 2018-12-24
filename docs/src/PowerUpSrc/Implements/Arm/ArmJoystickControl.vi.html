@@ -1,0 +1,469 @@
+<HTML>
+<HEAD>
+<TITLE>ArmJoystickControl.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="ArmJoystickControl.vi"></A><H2>ArmJoystickControl.vi</H2>
+<P></P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../../img/ArmJoystickControl.vic.png" ALT="ArmJoystickControl.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../../img/ArmJoystickControl.vip.png" ALT="ArmJoystickControl.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ccclst.png" ALT="ccclst"></P>
+</TD>
+<TD>
+<B>Joystick control</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>drive speed</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>drive turning</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Unassigned_LX</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Unassigned_RY</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Cube Release</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Intake Forward</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Intake Reverse </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Switch</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Scale Low</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Scale High</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Shift</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Arm To Preset</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Win_LJ</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Win_RJ</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Swap/ClimbPosition_Back</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Swap_Start</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Arm Extend/Retract</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Unassigned_RX 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Unassigned_LX 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Arm  Pivot Up/Down </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Cube Release 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Extend/Retract Intake</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Open/Close Intake</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Switch 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Scale High 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Scale Low 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Claw Pinch 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Arm Hold</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Unassigned_LJ 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Unassigned_RJ 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Swap/ClimbPosition_Back 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Swap/SelfieStick_Start 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Climb Up 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Unassigned_Right 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Climb Down 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Unassigned_Left 2</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Climb Up </B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B> Unassigned_Right</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Climb Down</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Unassigned_Left</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/icclst.png" ALT="icclst"></P>
+</TD>
+<TD>
+<B>ArmPlanRequest</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>Destination</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Preview</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>Start</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Fixed Start</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>NewPath</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../../img/ienum.png" ALT="ienum"></P>
+</TD>
+<TD>
+<B>TargetPosition</B> </TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../../img/ArmJoystickControl.vid.png" ALT="ArmJoystickControl.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;ArmJoystickControl.vi History&quot;</P>
+<P>Current Revision:   15</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../../img/ArmJoystickControl.vih.png" ALT="ArmJoystickControl.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>

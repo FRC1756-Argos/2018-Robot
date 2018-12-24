@@ -71,6 +71,19 @@
 			</Item>
 			<Item Name="Arbitor.vi" Type="VI" URL="../Miscellaneous/Arbitor/Arbitor.vi"/>
 		</Item>
+		<Item Name="AutoDoc" Type="Folder">
+			<Item Name="HTML Helpers" Type="Folder">
+				<Item Name="MakeHTML.vi" Type="VI" URL="../Miscellaneous/AutoDoc/HTML Helpers/MakeHTML.vi"/>
+				<Item Name="MakeHTMLBody.vi" Type="VI" URL="../Miscellaneous/AutoDoc/HTML Helpers/MakeHTMLBody.vi"/>
+				<Item Name="MakeHTMLHeader.vi" Type="VI" URL="../Miscellaneous/AutoDoc/HTML Helpers/MakeHTMLHeader.vi"/>
+				<Item Name="MakeHTMLLink.vi" Type="VI" URL="../Miscellaneous/AutoDoc/HTML Helpers/MakeHTMLLink.vi"/>
+				<Item Name="MakeHTMLList.vi" Type="VI" URL="../Miscellaneous/AutoDoc/HTML Helpers/MakeHTMLList.vi"/>
+				<Item Name="MakeHTMLParagraph.vi" Type="VI" URL="../Miscellaneous/AutoDoc/HTML Helpers/MakeHTMLParagraph.vi"/>
+				<Item Name="TagHTMLContent.vi" Type="VI" URL="../Miscellaneous/AutoDoc/HTML Helpers/TagHTMLContent.vi"/>
+			</Item>
+			<Item Name="AutoDoc.vi" Type="VI" URL="../Miscellaneous/AutoDoc/AutoDoc.vi"/>
+			<Item Name="GenerateNavigationPages.vi" Type="VI" URL="../Miscellaneous/AutoDoc/GenerateNavigationPages.vi"/>
+		</Item>
 		<Item Name="TypeDefs" Type="Folder">
 			<Item Name="ArgoDriveJoystickMap.ctl" Type="VI" URL="../Miscellaneous/TypeDefs/ArgoDriveJoystickMap.ctl"/>
 			<Item Name="LookUpTableParameters.ctl" Type="VI" URL="../Miscellaneous/TypeDefs/LookUpTableParameters.ctl"/>
