@@ -92,5 +92,5 @@ The calibration file should be named "/home/lvuser/DriveEncoderCal.csv".  The he
     + [Limestone Community High School](http://limestone.k12.il.us)
     + [SC2](http://www.sc2services.com)
 
-##License
+## License
 This software is licensed under the [GNU General Public License v3](http://www.gnu.org/licenses/#GPL).  If you would like to use this software under the terms of a different license agreement, please [contact us](mailto:1756argos1756@limestone310.org).
