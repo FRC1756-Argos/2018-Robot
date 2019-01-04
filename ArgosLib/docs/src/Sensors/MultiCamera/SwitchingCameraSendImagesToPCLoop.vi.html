@@ -1,0 +1,111 @@
+<HTML>
+<HEAD>
+<TITLE>ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></A><H2>ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi</H2>
+<P>This VI is used to serve images from one or more named cameras on your robot to the dashboard, SmartDashboard, or compatible web browser.  Camera name and type info is published using network tables. Connections are on port 1181 by default and the URL for streaming can be found by looking at the network &quot;camera&quot;/streams variable. Cameras that are opened and stored in the name registry are automatically published by that name.</P>
+<P></P>
+<P>This VI runs in parallel with other code and should be placed in Robot Main or in Periodic Tasks.</P>
+<P></P>
+<P>This software is licensed. Open the labview\readme\WPI Robotics Library Open Source License.txt file for more information.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vic.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<HR>
+<H3>Front Panel</H3>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vip.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>port</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="../../../img/cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>AutoSwitchCameraName</B> </TD>
+</TR>
+</Table>
+<HR>
+<H3>Block Diagram</H3>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vid.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vid1.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vid2.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vid3.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vid4.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vid5.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vid6.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<HR>
+<H3>List of SubVIs and Express VIs with Configuration Information</H3>
+<HR>
+<H3>VI Revision History</H3>
+<P>&quot;ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi History&quot;</P>
+<P>Current Revision:   185</P>
+<HR>
+<H3>Position in Hierarchy</H3>
+<P><IMG SRC="../../../img/SwitchingCameraSendImagesToPCLoop.vih.png" ALT="ArgosLib.lvlib:SwitchingCameraSendImagesToPCLoop.vi"></P>
+<HR>
+<H3>Iconified Cluster Constants</H3>
+</BODY>
+</HTML>
